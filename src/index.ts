@@ -24,8 +24,8 @@ class Server {
     }
 
     routes(): void {
-        this.app.use('/',indexRoutes);//ejecutamos la ruta index
-        this.app.use('/api/games',gamesRoutes);//ejecutamos la ruta games
+        this.app.use('0.0.0.0/',indexRoutes);//ejecutamos la ruta index
+        this.app.use('0.0.0.0/api/games',gamesRoutes);//ejecutamos la ruta games
     }
 
     //ejecutamos el servidor

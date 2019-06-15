@@ -23,8 +23,8 @@ class Server {
         this.app.use(express_1.default.urlencoded({ extended: false })); //Analiza las solicitudes entrantes con las cargas útiles urlencoded
     }
     routes() {
-        this.app.use('/', indexRoutes_1.default); //ejecutamos la ruta index
-        this.app.use('/api/games', gamesRoutes_1.default); //ejecutamos la ruta games
+        this.app.use('0.0.0.0/', indexRoutes_1.default); //ejecutamos la ruta index
+        this.app.use('0.0.0.0/api/games', gamesRoutes_1.default); //ejecutamos la ruta games
     }
     //ejecutamos el servidor
     start() {
